@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'ERP'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+
+    maven {
+        url "https://mvnrepository.com/artifact/com.google.inject/guice"
+    }
+}
+
+dependencies {
+    implementation group: 'com.google.inject', name: 'guice', version: '5.1.0'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.1'
+}
+
+test {
+    useJUnitPlatform()
+}
