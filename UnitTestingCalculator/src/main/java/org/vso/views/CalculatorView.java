@@ -43,18 +43,18 @@ public class CalculatorView {
             if (data) acceptUserNumbersForDivision();
         });
 
-        viewModel.getShouldTellIfNumberIsPositive().subscribe(data -> {
-            if (data) acceptUserNumberForPositiveCheck();
+        viewModel.getShouldTellIfNumberIsEven().subscribe(data -> {
+            if (data) acceptUserNumberForEvenCheck();
         });
 
         viewModel.getResult().subscribe(this::showResult);
 
-        viewModel.getPositiveResult().subscribe(this::showResult);
+        viewModel.getIsEven().subscribe(this::showResult);
     }
 
-    private void acceptUserNumberForPositiveCheck() {
-        show("Enter number for Positive check:");
-        viewModel.onUserInputForPositiveCheck(getUserDecimalInput());
+    private void acceptUserNumberForEvenCheck() {
+        show("Enter number for Even check:");
+        viewModel.onUserInputForEvenCheck(getUserDecimalInput());
     }
 
     private void acceptUserNumbersForDivision() {
@@ -100,6 +100,6 @@ public class CalculatorView {
                 2. Subtraction
                 3. Multiplication
                 4. Division
-                5. Check for positive number""");
+                5. Check for Even number""");
     }
 }

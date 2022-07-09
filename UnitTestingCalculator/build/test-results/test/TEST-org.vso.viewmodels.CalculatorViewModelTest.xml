@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="org.vso.viewmodels.CalculatorViewModelTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2022-07-08T16:14:44" hostname="DESKTOP-NBQ4J5Q" time="0.079">
+<testsuite name="org.vso.viewmodels.CalculatorViewModelTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2022-07-09T20:47:39" hostname="DESKTOP-NBQ4J5Q" time="0.032">
   <properties/>
-  <testcase name="testOnUserInputEnteredWhenUserSelectsSubtractionThenGetsNumbersForSubtraction()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.056"/>
-  <testcase name="testOnUserInputEnteredWhenUserSelectsDivisionThenGetsNumbersForDivision()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.001"/>
-  <testcase name="testOnUserInputForSubtractionWhenTwoMultiplyByFourThenGetsEight()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.001"/>
-  <testcase name="testOnUserInputForSubtractionWhenTenMinusThreeThenGetsSeven()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.001"/>
-  <testcase name="testOnUserInputForDivisionWhenTwoDividedByTwoThenGetsOne()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.001"/>
-  <testcase name="testOnUserInputEnteredWhenUserSelectsMultiplicationThenGetsNumbersForMultiplication()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.001"/>
-  <testcase name="testOnUserInputForDivisionWhenNineDividedByThreeThenGetsThree()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.001"/>
-  <testcase name="testOnUserInputForPositiveCheckWhenUserInputIsBiggerThanZeroThenGetsTrue()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.001"/>
-  <testcase name="testOnUserInputEnteredWhenUserSelectsPositiveCheckThenGetsNumberForPositiveCheck()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.001"/>
-  <testcase name="testOnUserInputForAdditionWhenThreePlusSevenThenGetsTen()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.001"/>
+  <testcase name="testOnUserInputEnteredWhenUserSelectsSubtractionThenGetsNumbersForSubtraction()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.018"/>
+  <testcase name="testOnUserInputEnteredWhenUserSelectsDivisionThenGetsNumbersForDivision()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.0"/>
+  <testcase name="testOnUserInputForSubtractionWhenTwoMultiplyByFourThenGetsEight()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.0"/>
+  <testcase name="testOnUserInputForSubtractionWhenTenMinusThreeThenGetsSeven()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.0"/>
+  <testcase name="testOnUserInputForDivisionWhenTwoDividedByTwoThenGetsOne()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.0"/>
+  <testcase name="testOnUserInputForEvenCheckWhenUserInputIsEvenNumberThenGetsTrue()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.0"/>
+  <testcase name="testOnUserInputEnteredWhenUserSelectsMultiplicationThenGetsNumbersForMultiplication()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.0"/>
+  <testcase name="testOnUserInputForDivisionWhenNineDividedByThreeThenGetsThree()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.0"/>
+  <testcase name="testOnUserInputForEvenCheckWhenUserInputIsOddNumberThenGetsFalse()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.0"/>
+  <testcase name="testOnUserInputEnteredWhenUserSelectsPositiveCheckThenGetsNumberForPositiveCheck()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.0"/>
+  <testcase name="testOnUserInputForAdditionWhenThreePlusSevenThenGetsTen()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.0"/>
   <testcase name="testOnUserInputForMultiplicationWhenTwoMultiplyByTwoThenGetsFour()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.001"/>
   <testcase name="testOnUserInputForSubtractionWhenOneMinusOneThenGetsZero()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.001"/>
-  <testcase name="testOnUserInputForAdditionWhenOnePlusOneThenGetsTwo()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.0"/>
+  <testcase name="testOnUserInputForAdditionWhenOnePlusOneThenGetsTwo()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.001"/>
   <testcase name="testOnUserInputEnteredWhenUserSelectsAdditionThenGetsNumbersForAddition()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.001"/>
-  <testcase name="testOnUserInputForPositiveCheckWhenUserInputIsLowerThanZeroThenGetsFalse()" classname="org.vso.viewmodels.CalculatorViewModelTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

@@ -16,9 +16,9 @@ public class CalculatorViewModel {
 
     private LiveData<Boolean> shouldGetNumbersForDivision;
 
-    private LiveData<Boolean> shouldTellIfNumberIsPositive;
+    private LiveData<Boolean> shouldTellIfNumberIsEven;
 
-    private LiveData<Boolean> positiveResult;
+    private LiveData<Boolean> isEven;
 
     private LiveData<Integer> result;
 
@@ -29,8 +29,8 @@ public class CalculatorViewModel {
         this.shouldGetNumbersForSubtraction = new LiveData<>(false);
         this.shouldGetNumbersForMultiplication = new LiveData<>(false);
         this.shouldGetNumbersForDivision = new LiveData<>(false);
-        this.shouldTellIfNumberIsPositive = new LiveData<>(false);
-        this.positiveResult = new LiveData<>(false);
+        this.shouldTellIfNumberIsEven = new LiveData<>(false);
+        this.isEven = new LiveData<>(false);
         this.result = new LiveData<>(null);
     }
 
@@ -64,16 +64,16 @@ public class CalculatorViewModel {
     }
 
 
-    public LiveData<Boolean> getShouldTellIfNumberIsPositive() {
-        return shouldTellIfNumberIsPositive;
+    public LiveData<Boolean> getShouldTellIfNumberIsEven() {
+        return shouldTellIfNumberIsEven;
     }
 
     public LiveData<Integer> getResult() {
         return result;
     }
 
-    public LiveData<Boolean> getPositiveResult() {
-        return positiveResult;
+    public LiveData<Boolean> getIsEven() {
+        return isEven;
     }
 
     public void onUserInputEntered(int userInput) {
@@ -82,12 +82,12 @@ public class CalculatorViewModel {
             case 2 -> setupSubtraction();
             case 3 -> setupMultiplication();
             case 4 -> setupDeletion();
-            case 5 -> setupCheckForPositiveNumber();
+            case 5 -> setupCheckForEvenNumber();
         }
     }
 
-    private void setupCheckForPositiveNumber() {
-        shouldTellIfNumberIsPositive.post(true);
+    private void setupCheckForEvenNumber() {
+        shouldTellIfNumberIsEven.post(true);
     }
 
     private void setupDeletion() {
@@ -122,8 +122,8 @@ public class CalculatorViewModel {
         result.post(numberOne / numberTwo);
     }
 
-    public void onUserInputForPositiveCheck(int number) {
-        if (number >= 0) positiveResult.post(true);
-        else positiveResult.post(false);
+    public void onUserInputForEvenCheck(int number) {
+        if (number % 2 == 0) isEven.post(true);
+        else isEven.post(false);
     }
 }

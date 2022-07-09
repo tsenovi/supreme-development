@@ -64,7 +64,7 @@ public class CalculatorViewModelTest {
     public void testOnUserInputEnteredWhenUserSelectsPositiveCheckThenGetsNumberForPositiveCheck() {
         viewModel.onUserInputEntered(5);
 
-        boolean actual = viewModel.getShouldTellIfNumberIsPositive().getData();
+        boolean actual = viewModel.getShouldTellIfNumberIsEven().getData();
         boolean expected = true;
 
         assertEquals(expected, actual);
@@ -159,20 +159,20 @@ public class CalculatorViewModelTest {
     }
 
     @Test
-    public void testOnUserInputForPositiveCheckWhenUserInputIsBiggerThanZeroThenGetsTrue() {
+    public void testOnUserInputForEvenCheckWhenUserInputIsEvenNumberThenGetsTrue() {
         int number = 10;
-        viewModel.onUserInputForPositiveCheck(number);
-        boolean actual = viewModel.getPositiveResult().getData();
+        viewModel.onUserInputForEvenCheck(number);
+        boolean actual = viewModel.getIsEven().getData();
         boolean expected = true;
 
         assertEquals(expected, actual);
     }
 
     @Test
-    public void testOnUserInputForPositiveCheckWhenUserInputIsLowerThanZeroThenGetsFalse() {
-        int number = -10;
-        viewModel.onUserInputForPositiveCheck(number);
-        boolean actual = viewModel.getPositiveResult().getData();
+    public void testOnUserInputForEvenCheckWhenUserInputIsOddNumberThenGetsFalse() {
+        int number = -9;
+        viewModel.onUserInputForEvenCheck(number);
+        boolean actual = viewModel.getIsEven().getData();
         boolean expected = false;
 
         assertEquals(expected, actual);
